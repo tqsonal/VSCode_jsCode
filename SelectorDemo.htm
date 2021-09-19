@@ -1,0 +1,99 @@
+<!-- 
+5 types of selector
+
+1. simple selector 
+ element selector 
+ id selector #
+ class selector . 
+ universal selector *
+
+2. combinator selector 
+descendant selector  (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+3. pseudo-class selector 
+a:link
+a:visited
+a:hover
+
+4. pseudo-element selector 
+5. attribute selector 
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .one {
+            color: red
+        }
+
+        .two {
+            color: purple
+        }
+
+        div h1 {
+            color: brown;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: orange;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h4,
+        h5 {
+            color: pink;
+            text-transform: capitalize;
+            background-color: darkgray;
+        }
+
+        p>span {
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p>
+    <div>
+        <span> i am span demo </span>
+    </div>
+    </p>
+
+
+
+    <h1 class="one">Hello</h1>
+    <h1 class="one">bye</h1>
+
+    <h4>i am h4 demo</h4>
+    <h5>i am h5 demo</h5>
+
+    <div>
+        <h1>
+            Decendant selector
+        </h1>
+    </div>
+
+    <h1>hello</h1>
+    <h1>bye</h1>
+    <ul>
+        <li><a href="#"> HOME</a></li>
+    </ul>
+</body>
+
+</html>
